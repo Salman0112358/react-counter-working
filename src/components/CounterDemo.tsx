@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../utils/index.css"
 
 function CounterDemo(): JSX.Element {
   const [counterValueFromCurrentRender, queueRerenderWithNewCounterValue] =
@@ -27,12 +28,12 @@ function CounterDemo(): JSX.Element {
   return (
     <>
       <h1>Counter Demo</h1>
-      <p>Current value: {counterValueFromCurrentRender}</p>
-      <button onClick={handleAddOne}>+1</button>
-      <button onClick={handleMinusOne}>-1</button>
+      <p id ="current-value">Current value: <b>{counterValueFromCurrentRender}</b></p>
+      <button className="positive-btn" onClick={handleAddOne}>+1</button>
+      <button className="negative-btn" onClick={handleMinusOne}>-1</button>
       <hr />
-      <button onClick={handleAddFive}>+5</button>
-      <button onClick={handleMinusFive}>-5</button>
+      <button className="positive-btn" onClick={handleAddFive}>+5</button>
+      <button className="negative-btn" onClick={handleMinusFive}>-5</button>
       <hr />
       <button onClick={handleReset}>Reset counter</button>
     </>

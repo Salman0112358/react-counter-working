@@ -1,0 +1,28 @@
+h1 {
+    font-size: 30px;
+    color: coral;
+}
+
+#curent-value {
+    font-size: 20px;
+    color: purple;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    margin: 2px;
+}
+
+.negative-btn {
+    background-color: rgb(160, 16, 16);
+    font-size: large;
+
+}
+
+.positive-btn {
+    background-color: greenyellow;
+    font-size: large;
+}
